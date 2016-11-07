@@ -31,11 +31,19 @@ impl MeshManager {
         }
     }
 
-    pub fn for_each<F>(&mut self, func: F) where F: Fn(&mut Mesh) {
+    pub fn for_each<F>(&self, func: F) where F: Fn(&Mesh) {
+        for mesh in self.data.components.iter() {
+            func(mesh);
+        }
+    }
+    pub fn for_each_mut<F>(&mut self, func: F) where F: Fn(&mut Mesh) {
         for mesh in self.data.components.iter_mut() {
             func(mesh);
         }
     }
+
+    pub fn get_components(&self) -> &Vector<Mesh> {&self.data.components}
+    pub fn get_components_mut(&mut self) -> &mut Vector<Mesh> {&mut self.data.components}
 }
 
 impl ComponentManager for MeshManager {
