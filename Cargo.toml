@@ -10,34 +10,22 @@ readme = "README.md"
 repository = "https://github.com/nathanfaucett/rs-mesh.git"
 homepage = "https://github.com/nathanfaucett/rs-mesh"
 
-[dependencies.vector]
-git = "https://github.com/nathanfaucett/rs-vector.git"
-[dependencies.collection]
-git = "https://github.com/nathanfaucett/rs-collection.git"
-[dependencies.stack]
-git = "https://github.com/nathanfaucett/rs-stack.git"
-[dependencies.remove]
-git = "https://github.com/nathanfaucett/rs-remove.git"
-[dependencies.hash_map]
-git = "https://github.com/nathanfaucett/rs-hash_map.git"
+[dependencies]
+vector = {git = "https://github.com/nathanfaucett/rs-vector.git"}
+collection = {git = "https://github.com/nathanfaucett/rs-collection.git"}
+stack = {git = "https://github.com/nathanfaucett/rs-stack.git"}
+remove = {git = "https://github.com/nathanfaucett/rs-remove.git"}
+hash_map = {git = "https://github.com/nathanfaucett/rs-hash_map.git"}
 
-[dependencies.geometry]
-git = "https://github.com/nathanfaucett/rs-geometry.git"
+geometry = {git = "https://github.com/nathanfaucett/rs-geometry.git"}
 
-[dependencies.material]
-git = "https://github.com/nathanfaucett/rs-material.git"
-[dependencies.shader]
-git = "https://github.com/nathanfaucett/rs-shader.git"
+material = {git = "https://github.com/nathanfaucett/rs-material.git"}
+shader = {git = "https://github.com/nathanfaucett/rs-shader.git"}
 
-[dependencies.shared]
-git = "https://github.com/nathanfaucett/rs-shared.git"
+shared = {git = "https://github.com/nathanfaucett/rs-shared.git"}
 
-[dependencies.scene_renderer]
-git = "https://github.com/nathanfaucett/rs-scene_renderer.git"
-[dependencies.scene_graph]
-git = "https://github.com/nathanfaucett/rs-scene_graph.git"
+scene_renderer = {git = "https://github.com/nathanfaucett/rs-scene_renderer.git"}
+scene_graph = {git = "https://github.com/nathanfaucett/rs-scene_graph.git"}
 
-[dependencies.gl_context]
-git = "https://github.com/nathanfaucett/rs-gl_context.git"
-[dependencies.gl_geometry]
-git = "https://github.com/nathanfaucett/rs-gl_geometry.git"
+gl_geometry = {git = "https://github.com/nathanfaucett/rs-gl_geometry.git"}
+gl_context = {git = "https://github.com/nathanfaucett/rs-gl_context.git"}

@@ -13,7 +13,6 @@ use scene_graph::{Scene, Entity};
 use geometry::Geometry;
 use material::Material;
 
-
 #[test]
 fn test_scene() {
     let mut scene = Scene::new();
